@@ -6,9 +6,9 @@ export class Alfabeto {
         this.alfabeto = alfabeto.split('');
     }
 
-    public getAlfabeto(): string [] {
-        return this.alfabeto;
-    }
+    public getLength(): number {return this.alfabeto.length;}
+
+    public getAlfabeto(): string [] {return this.alfabeto;}
 
     public getIndexOf(char: string): number {
         // Lo pasamos a mayúsculas siempre para así trabajar también con minúsculas.

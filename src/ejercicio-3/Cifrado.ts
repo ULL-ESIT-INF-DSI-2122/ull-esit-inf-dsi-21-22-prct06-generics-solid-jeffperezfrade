@@ -25,10 +25,13 @@ export class Cifrado {
                 claveAmpliada += this.clave.getCharAt(index);
             fullClave = claveAmpliada;
         }
-
-        
-
-
+        for(let index: number = 0; index < this.mensajeEntrada.length; index++) {
+            let d: number = this.alfabeto.getIndexOf(fullClave[index]) + 1;
+            if(this.alfabeto.getIndexOf(this.mensajeEntrada[index]) != -1){
+                let pos: number = (this.alfabeto.getIndexOf(this.mensajeEntrada[index]) + d) % this.alfabeto.getLength();
+                finalString += this.alfabeto.getCharAt(pos);
+            } else finalString += this.mensajeEntrada[index];
+        }
         return finalString;
     }
 

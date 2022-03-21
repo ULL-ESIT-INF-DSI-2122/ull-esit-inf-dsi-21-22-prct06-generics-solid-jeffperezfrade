@@ -2,9 +2,8 @@
 export class Alfabeto {
     private alfabeto: string [];
 
-    constructor(){
-        const letras: string = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-        this.alfabeto = letras.split('');
+    constructor(alfabeto: string){
+        this.alfabeto = alfabeto.split('');
     }
 
     public getAlfabeto(): string [] {

@@ -47,7 +47,10 @@ export class Cifrado {
         }
         return finalString;
     }
-
+    /**
+     * La función decodificar el mensaje cifrado que el usuario ha introducido usando la clave tambien introducida.
+     * @returns Devuelve el mensaje decodificado (mensaje original).
+     */
     public decode(): string {
         let finalString: string = '';
         let fullClave: string = this.clave.getClave();
@@ -59,7 +62,6 @@ export class Cifrado {
                 claveAmpliada += this.clave.getCharAt(index);
             fullClave = claveAmpliada;
         }
-
         for(let index: number = 0; index < this.mensajeEntrada.length; index++) {
             let d: number = this.alfabeto.getIndexOf(fullClave[index]) + 1;
             if(this.alfabeto.getIndexOf(this.mensajeEntrada[index]) != -1 && this.alfabeto.getIndexOf(this.mensajeEntrada[index]) >= d){

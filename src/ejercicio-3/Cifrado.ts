@@ -3,18 +3,30 @@ import {Clave} from "./Clave";
 // Paquete requerido para utilizar el prompt.
 const {prompt} = require('enquirer');
 const inquirer = require('inquirer');
-
+/**
+ * Clase Cifrado donde se lleva a cabo la codificación y decodificación César.
+ */
 export class Cifrado {
+    // Clave del cifrado pedida al usuario.
     private clave: Clave;
     private alfabeto: Alfabeto;
+    // Mensaje de entrada pedido al usuario.
     private mensajeEntrada: string;
-
+    /**
+     * Constructor de la clase Cifrado.
+     * @param clave Clave dada por el usuario para el cifrado.
+     * @param mensajeEntrada Mensaje de entrada dada por el usuario a cifrar o descifrar.
+     * @param alfabeto Alfabeto que se usará para el cifrado.
+     */
     constructor(clave: string, mensajeEntrada: string, alfabeto: string) {
         this.clave = new Clave(clave);
         this.mensajeEntrada = mensajeEntrada;
         this.alfabeto = new Alfabeto(alfabeto);
     }
-
+    /**
+     * La función codifica el mensaje de entrada teniendo en cuenta la clave y el alfabeto de la clase.
+     * @returns Devuelve el mensaje codificado.
+     */
     public encode(): string {
         let finalString: string = '';
         let fullClave: string = this.clave.getClave();
@@ -60,11 +72,14 @@ export class Cifrado {
         return finalString;
     }
 }
-
+// Alfabeto que se va a utilizar para el cifrado
 const alfabeto: string = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-
+/**
+ * Función asíncrona necesaria para utilizar el prompt con el paquete'enquirer'
+ */
 const start = async function() {
-    const res = inquirer.prompt([
+    console.log('\nBienvenido al programa del Cifrado César.');
+    inquirer.prompt([
         {
             type: 'list',
             name: 'eleccion',

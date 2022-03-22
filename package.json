@@ -29,6 +29,7 @@
     "typedoc": "^0.22.13"
   },
   "dependencies": {
-    "enquirer": "^2.3.6"
+    "enquirer": "^2.3.6",
+    "inquirer": "^8.2.1"
   }
 }

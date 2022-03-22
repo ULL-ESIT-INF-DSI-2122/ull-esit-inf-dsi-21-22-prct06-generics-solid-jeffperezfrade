@@ -64,36 +64,34 @@ export class Cifrado {
 const alfabeto: string = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
 
 const start = async function() {
-    let stop: boolean = false;
-    while(!stop){
-        const res = inquirer.prompt([
-            {
-              type: 'list',
-              name: 'eleccion',
-              message: '¿Que quieres hacer?:',
-              choices: ['Codificar', 'Decodificar', 'Salir'],
-            },
-          ])
-          .then(async (answers) => {
-            if(answers.eleccion == "Codificar"){
-                    const response = await prompt([
-                {
-                    type: 'input',
-                    name: 'mensajeEntrada',
-                    message: 'Mensaje de entrada:',
-                },
-                {
-                    type: 'input',
-                    name: 'clave',
-                    message: 'Palabra Clave:',
-                },
-            ]);
-            const cifradoCesar = new Cifrado(response.clave, response.mensajeEntrada, alfabeto);
-            console.log(`\nEl cifrado se realizará con el alfabeto: ${alfabeto}`);
-            console.log(`\nMensaje de entrada: ${response.mensajeEntrada}`);
-            console.log(`Palabra clave: ${response.clave}`);
-            console.log(`\nResultado del cifrado: ${cifradoCesar.encode()}`);
-            } else if(answers.eleccion == "Decodificar") {
+    const res = inquirer.prompt([
+        {
+            type: 'list',
+            name: 'eleccion',
+            message: '¿Que quieres hacer?:',
+            choices: ['Codificar', 'Decodificar'],
+        },
+    ])
+        .then(async (answers) => {
+            if (answers.eleccion == "Codificar") {
+                const response = await prompt([
+                    {
+                        type: 'input',
+                        name: 'mensajeEntrada',
+                        message: 'Mensaje de entrada:',
+                    },
+                    {
+                        type: 'input',
+                        name: 'clave',
+                        message: 'Palabra Clave:',
+                    },
+                ]);
+                const cifradoCesar = new Cifrado(response.clave, response.mensajeEntrada, alfabeto);
+                console.log(`\nEl cifrado se realizará con el alfabeto: ${alfabeto}`);
+                console.log(`\nMensaje de entrada: ${response.mensajeEntrada}`);
+                console.log(`Palabra clave: ${response.clave}`);
+                console.log(`\nResultado del cifrado: ${cifradoCesar.encode()}`);
+            } else if (answers.eleccion == "Decodificar") {
                 const response = await prompt([
                     {
                         type: 'input',
@@ -111,15 +109,13 @@ const start = async function() {
                 console.log(`\nMensaje encriptado: ${response.mensajeEntrada}`);
                 console.log(`Palabra clave: ${response.clave}`);
                 console.log(`\nPalabra descifrada: ${cifradoCesar.decode()}`);
-            } else if (answers.eleccion == "Salir") {
-                stop = true;
-                return 0;
             } else {
                 console.log('\nOpción no válida.');
                 return -1;
             }
-          });
-    }
+        });
 };
-
+/**
+ * Función que inicia el menú del ejercicio.
+ */
 start();

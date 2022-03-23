@@ -4,6 +4,11 @@ export class StringSearchableCollection extends SearchableCollection<string> {
     constructor(public collection: string[]){
         super(collection);
     }
+    /**
+     * Función search que viene de la interfaz genérica Searchable.
+     * @param item Item a buscar dentro de la collección.
+     * @returns Deuelve un array con el elemento buscado el numero de veces que aparece.
+     */
     search(item: string): string[] {
         let stringArray: string[] = [];
         for(let index: number = 0; index < this.collection.length; index++){

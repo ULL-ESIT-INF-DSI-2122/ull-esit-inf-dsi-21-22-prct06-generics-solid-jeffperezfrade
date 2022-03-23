@@ -1,6 +1,10 @@
 {
     "entryPoints": [
-        
+        "./src/mod-clase/Collectable.ts",
+        "./src/mod-clase/Searchable.ts",
+        "./src/mod-clase/NumericSearchableCollection.ts",
+        "./src/mod-clase/SearchableCollection.ts",
+        "./src/mod-clase/StringSearchableCollection.ts"
     ],
     "out": "./type-docs"
 }

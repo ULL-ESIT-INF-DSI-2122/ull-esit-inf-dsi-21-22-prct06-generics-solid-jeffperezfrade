@@ -1,8 +1,6 @@
-import {Fighter} from './Fighter';
+import {Fighter} from "./Fighter";
 
-export type powerPhases = 'Oozaru' | 'SuperSaiyan' | 'SuperSaiyan2' | 'SuperSaiyan3';
-
-export class DragonBall extends Fighter {
+export class DC extends Fighter {
     constructor(
         protected name: string,
         protected weight: number,
@@ -11,11 +9,10 @@ export class DragonBall extends Fighter {
         protected defense: number,
         protected speed: number,
         protected health: number,
-        protected phases: powerPhases){
+        protected power: string){
             super(name, weight, height, attack, defense, speed, health);
         }
-
-    getPower(): powerPhases {
-        return this.phases;
+    getPower(): string {
+        return this.power;
     }
 }

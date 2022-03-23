@@ -1,15 +1,32 @@
 import {BasicStreamableCollection} from "./BasicStreamableCollection";
+
+/**
+ * Tipo de dato que contiene los detalles de los documentales.
+ */
 export type detailsDocumentary = {
     title: string,
     director: string,
     date: string,
     duration: number
 }
-
+/**
+ * Clase que se extiende de la clase abstracta genérica BasicStreamableCollection.
+ * Utilizamos el tipo de dato creado antetiormente (detailsDocumentary).
+ */
 export class Documentaries extends BasicStreamableCollection <detailsDocumentary> {
+    /**
+     * Constructor de la clase Documentaries.
+     * @param collection Collección de documentales.
+     */
     constructor(public collection: detailsDocumentary[]){
         super(collection);
     }
+    /**
+     * La función busca mediante un criteo de búsqueda y unos valores y devuelve una colección de ocurrencias.
+     * @param criteria Criterios de búsqueda.
+     * @param value Valores para la búsqueda.
+     * @returns Devuelve una colección resultado de la búsqueda.
+     */
     searchElementInCollection(criteria: string[], value: string[]): detailsDocumentary[] {
         const numbers: number[] = [];
         for (let i: number = 0; i < value.length; i++) {

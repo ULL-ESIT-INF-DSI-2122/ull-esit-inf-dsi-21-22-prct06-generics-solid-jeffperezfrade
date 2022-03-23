@@ -1,5 +1,5 @@
 /**
- * Clase Alfabeto el cual se usará como refencia para el cifrado.
+ * Clase Alfabeto el cual se usará como referencia para el cifrado.
  */
 export class Alfabeto {
     // Alfabeto almacenado en un array de caracteres.
@@ -22,9 +22,9 @@ export class Alfabeto {
      */
     public getAlfabeto(): string [] {return this.alfabeto;}
     /**
-     * El método devuelve el índice de un caracter pasado por parámetro.
-     * @param char Caracter a buscar su índice.
-     * @returns Devuelve el índice del caracter pasado por parámetro.
+     * El método devuelve el índice de un carácter pasado por parámetro.
+     * @param char Carácter a buscar su índice.
+     * @returns Devuelve el índice del carácter pasado por parámetro.
      */
     public getIndexOf(char: string): number {
         // Lo pasamos a mayúsculas siempre para así trabajar también con minúsculas.
@@ -32,9 +32,9 @@ export class Alfabeto {
         return this.alfabeto.indexOf(char);
     }
     /**
-     * El método devuelve el caracter que se encuentra en el índice pasado por parámetro.
-     * @param index Indice del caracter a devolver.
-     * @returns Devuelve el caracter que se encuentra en el indice pasado por parámetro.
+     * El método devuelve el carácter que se encuentra en el índice pasado por parámetro.
+     * @param index Indice del carácter a devolver.
+     * @returns Devuelve el carácter que se encuentra en el indice pasado por parámetro.
      */
     public getCharAt(index: number): string {
         return this.alfabeto[index];

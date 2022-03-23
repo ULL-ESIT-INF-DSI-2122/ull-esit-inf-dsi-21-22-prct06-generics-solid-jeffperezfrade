@@ -3,6 +3,10 @@ import {Streamable} from "./Streamable";
  * Clase abstracta genérica que implementa métodos de la interfaz genérica Streamable.
  */
 export abstract class BasicStreamableCollection <T> implements Streamable <T> {
+    /**
+     * Constructor de la clase BasicStreamableCollection
+     * @param collection Colección de elementos genérica.
+     */
     constructor(public collection: T[]){}
     /**
      * Método genérico para añadir un elemento a la colección.
@@ -16,7 +20,7 @@ export abstract class BasicStreamableCollection <T> implements Streamable <T> {
     /**
      * Método genérico para eliminar un elemento de la colección.
      * @param element Elemento a eliminar.
-     * @returns Devuelve la colección acutalizada.
+     * @returns Devuelve la colección actualizada.
      */
     deleteElement(element: T): T[] {
         let index: number = this.collection.indexOf(element);
@@ -27,7 +31,7 @@ export abstract class BasicStreamableCollection <T> implements Streamable <T> {
         return this.collection;
     }
     /**
-     * Método abstracto parabuscar un elemento en las subclases (estas subclases deben implementarlo).
+     * Método abstracto para buscar un elemento en las subclases (estas subclases deben implementarlo).
      * @param criteria Criterios de búsqueda.
      * @param value Valores de búsqueda que deben coincidir.
      */

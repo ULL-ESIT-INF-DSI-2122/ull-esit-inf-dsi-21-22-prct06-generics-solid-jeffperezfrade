@@ -41,14 +41,14 @@ export class Combat {
         console.log(`The opponent 2 is ${this.fighter2.getName()} and has ${this.fighter2.getHealth()} HP\n\n`);
         while (hp1 > 0) {
           hp2 = hp2 - this.damageCaused(this.fighter1, this.fighter2);
-          console.log(this.fighter1.getCatchingPhrase() + `\n`);
+          //console.log(this.fighter1.getCatchingPhrase() + `\n`);
           console.log(`Attack of ${this.fighter1.getName()} >> ${this.fighter2.getName()} has ${hp2} HP\n\n`);
           if (hp2 <= 0) {
             console.log(`The combat is over and the winning opponent is: ${this.fighter1.getName()}`);
             return (`The combat is over and the winning opponent is: ${this.fighter1.getName()}`);
           }
           hp1 = hp1 - this.damageCaused(this.fighter2, this.fighter1);
-          console.log(this.fighter2.getCatchingPhrase() + `\n`);
+          //console.log(this.fighter2.getCatchingPhrase() + `\n`);
           console.log(`Attack of ${this.fighter2.getName()} >> ${this.fighter1.getName()} has ${hp1} HP\n\n`);
         }
         console.log(`The combat is over and the winning opponent is: ${this.fighter2.getName()}`);

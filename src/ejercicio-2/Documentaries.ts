@@ -11,18 +11,18 @@ export type detailsDocumentary = {
 }
 /**
  * Clase que se extiende de la clase abstracta genérica BasicStreamableCollection.
- * Utilizamos el tipo de dato creado antetiormente (detailsDocumentary).
+ * Utilizamos el tipo de dato creado anteriormente (detailsDocumentary).
  */
 export class Documentaries extends BasicStreamableCollection <detailsDocumentary> {
     /**
      * Constructor de la clase Documentaries.
-     * @param collection Collección de documentales.
+     * @param collection Colección de documentales.
      */
     constructor(public collection: detailsDocumentary[]){
         super(collection);
     }
     /**
-     * La función busca mediante un criteo de búsqueda y unos valores y devuelve una colección de ocurrencias.
+     * La función busca mediante un criterio de búsqueda y unos valores y devuelve una colección de ocurrencias.
      * @param criteria Criterios de búsqueda.
      * @param value Valores para la búsqueda.
      * @returns Devuelve una colección resultado de la búsqueda.

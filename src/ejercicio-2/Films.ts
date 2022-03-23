@@ -1,5 +1,7 @@
 import {BasicStreamableCollection} from "./BasicStreamableCollection";
-
+/**
+ * Tipo de dato que contiene detalles de una película.
+ */
 export type detailsFilm = {
     title: string,
     director: string,
@@ -7,12 +9,23 @@ export type detailsFilm = {
     duration: number
     genre: string[]
 }
-
-export class Films extends BasicStreamableCollection<detailsFilm> {
-    constructor(public collection: detailsFilm[]){
+/**
+ * Clase que se extiende de BasicStreamableCollection utilizando el tipo de dato detailsFilm
+ */
+export class Films extends BasicStreamableCollection <detailsFilm> {
+  /**
+   * Constructor de la clase Films.
+   * @param collection Colección de películas (objetos con los detalles de las películas).
+   */  
+  constructor(public collection: detailsFilm[]){
         super(collection);
     }
-
+    /**
+     * La función busca mediante un criterio de búsqueda y unos valores y devuelve una colección de ocurrencias.
+     * @param criteria Criterios de búsqueda.
+     * @param value Valores para la búsqueda.
+     * @returns Devuelve una colección resultado de la búsqueda.
+     */
     searchElementInCollection(criteria: string[], value: string[]): detailsFilm[] {
         const numbers: number[] = [];
             for (let i: number = 0; i < value.length; i++) {
@@ -52,5 +65,5 @@ export class Films extends BasicStreamableCollection<detailsFilm> {
               numbers.shift();
             }
             return result;
-          }
+      }
 }

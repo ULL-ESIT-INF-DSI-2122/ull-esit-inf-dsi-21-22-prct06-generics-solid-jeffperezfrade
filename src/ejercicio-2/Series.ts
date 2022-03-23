@@ -1,5 +1,7 @@
 import {BasicStreamableCollection} from "./BasicStreamableCollection";
-
+/**
+ * Tipo de dato para los detalles de la Series.
+ */
 export type detailsSerie = {
     title: string,
     director: string,
@@ -9,12 +11,23 @@ export type detailsSerie = {
     chapters: number,
     genre: string[]
 }
-
-export class Series extends BasicStreamableCollection<detailsSerie> {
-    constructor(public collection: detailsSerie[]) {
+/**
+ * Clase que se extienda de BasicStreamableCollection con el tipo de dato detailsSerie.
+ */
+export class Series extends BasicStreamableCollection <detailsSerie> {
+  /**
+   * Constructor de la clase Series.
+   * @param collection Colección de Series.
+   */  
+  constructor(public collection: detailsSerie[]) {
         super(collection);
     }
-
+    /**
+     * La función busca mediante un criterio de búsqueda y unos valores y devuelve una colección de ocurrencias.
+     * @param criteria Criterios de búsqueda.
+     * @param value Valores para la búsqueda.
+     * @returns Devuelve una colección resultado de la búsqueda.
+    */
     searchElementInCollection(criteria: string[], value: string[]): detailsSerie[] {
         const numbers: number[] = [];
         for (let i: number = 0; i < value.length; i++) {

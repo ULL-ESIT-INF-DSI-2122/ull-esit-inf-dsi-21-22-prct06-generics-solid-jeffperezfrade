@@ -24,7 +24,7 @@ export class Clave {
     /**
      * Método getter de una posición en concreto.
      * @param index Indice donde se quiere buscar.
-     * @returns Devuelve el caracter que se encuentra en el índice pasado por parámetro.
+     * @returns Devuelve el carácter que se encuentra en el índice pasado por parámetro.
      */
     public getCharAt(index: number): string {return this.clave[index];}
 }

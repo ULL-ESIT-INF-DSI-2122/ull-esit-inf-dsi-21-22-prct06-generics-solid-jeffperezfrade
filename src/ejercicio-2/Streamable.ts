@@ -12,7 +12,7 @@ export interface Streamable <T> {
     searchElementInCollection(criteria: string[], value: string[]): T[];
     /**
      * Método genérico que añade un elemento a la colección.
-     * @param element Elemento a añadir en la colleción.
+     * @param element Elemento a añadir en la colección.
      */
     addElement(element: T): T[];
     /**

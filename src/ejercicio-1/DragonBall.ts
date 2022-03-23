@@ -1,6 +1,6 @@
 import {Fighter} from './Fighter';
 
-export type powerPhases = 'Oozaru' | 'SuperSaiyan' | 'SuperSaiyan2' | 'SuperSaiyan3';
+export type powerPhases = 'SuperSaiyan' | 'SuperSaiyan2' | 'SuperSaiyan3';
 
 export class DragonBall extends Fighter {
     constructor(
@@ -15,7 +15,5 @@ export class DragonBall extends Fighter {
             super(name, weight, height, attack, defense, speed, health);
         }
 
-    getPower(): powerPhases {
-        return this.phases;
-    }
+    getPower(): powerPhases {return this.phases;}
 }

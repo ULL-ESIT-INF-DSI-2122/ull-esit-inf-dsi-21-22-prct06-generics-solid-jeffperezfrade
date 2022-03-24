@@ -35,5 +35,5 @@ export abstract class BasicStreamableCollection <T> implements Streamable <T> {
      * @param criteria Criterios de búsqueda.
      * @param value Valores de búsqueda que deben coincidir.
      */
-    abstract searchElementInCollection(criteria: string[], value: string[]): T[];
+    abstract searchElementInCollection(value: string[], criteria: string[]): T[];
 }

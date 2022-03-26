@@ -8,9 +8,7 @@ export class Clave {
      * Constructor de la clase Clave.
      * @param clave Clave introducida por el usuario.
      */
-    constructor(clave: string) {
-        this.clave = clave;
-    }
+    constructor(clave: string) {this.clave = clave;}
     /**
      * Método getter que devuelve la clave integra.
      * @returns Devuelve la clave.

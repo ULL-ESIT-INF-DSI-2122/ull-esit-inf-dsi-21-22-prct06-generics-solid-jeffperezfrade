@@ -1,5 +1,17 @@
-
+/**
+ * Clase abstracta Fighter.
+ */
 export abstract class Fighter {
+    /**
+     * Constructor de la clase abstracta Fighter.
+     * @param name Nombre del luchador.
+     * @param weight Peso del luchador.
+     * @param height Altura del luchador.
+     * @param attack Poder de ataque del luchador.
+     * @param defense Poder de defensa del luchador.
+     * @param speed Velocidad del luchador.
+     * @param health Salud (vida) del luchador.
+     */
     constructor(
         protected name: string,
         protected weight: number,

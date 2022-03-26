@@ -57,10 +57,3 @@ export class Documentaries extends BasicStreamableCollection <detailsDocumentary
       return finalResult;
     }
 }
-
-// const OJMadeinAmerica: detailsDocumentary = {title: 'O.J. MadeinAmerica', director: 'Ezra Edelman', date: '2016', duration: 448};
-// const InsideJob: detailsDocumentary = {title: 'Inside Job', director: 'Charles Ferguson', date: '2010', duration: 105};
-// const Home: detailsDocumentary = {title: 'Home', director: 'Yann Arthus-Bertrand', date: '2009', duration: 90};
-
-// const docu = new Documentaries([OJMadeinAmerica, InsideJob, Home]);
-// console.log(docu.searchElementInCollection(['Home', '90', '2009'], ['title', 'date']));

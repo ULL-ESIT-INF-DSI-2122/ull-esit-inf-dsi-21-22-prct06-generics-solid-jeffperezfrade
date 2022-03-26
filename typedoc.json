@@ -4,7 +4,25 @@
         "./src/mod-clase/Searchable.ts",
         "./src/mod-clase/NumericSearchableCollection.ts",
         "./src/mod-clase/SearchableCollection.ts",
-        "./src/mod-clase/StringSearchableCollection.ts"
+        "./src/mod-clase/StringSearchableCollection.ts",
+        "./src/ejercicio-1/Combat.ts",
+        "./src/ejercicio-1/DC.ts",
+        "./src/ejercicio-1/DragonBall.ts",
+        "./src/ejercicio-1/Fighter.ts",
+        "./src/ejercicio-1/Marvel.ts",
+        "./src/ejercicio-1/Pokemon.ts",
+        "./src/ejercicio-1/StarWars.ts",
+        "./src/ejercicio-1/Universe.ts",
+        "./src/ejercicio-2/BasicStreamableCollection.ts",
+        "./src/ejercicio-2/Documentaries.ts",
+        "./src/ejercicio-2/Films.ts",
+        "./src/ejercicio-2/Series.ts",
+        "./src/ejercicio-2/Streamable.ts",
+        "./src/ejercicio-3/Alfabeto.ts",
+        "./src/ejercicio-3/Cifrado.ts",
+        "./src/ejercicio-3/Clave.ts",
+        "./src/ejercicio-3/Ejercicio-3.ts"
+
     ],
     "out": "./type-docs"
 }

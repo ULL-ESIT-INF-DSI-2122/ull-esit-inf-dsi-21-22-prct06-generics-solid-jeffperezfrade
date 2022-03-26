@@ -1,8 +1,5 @@
 import {Alfabeto} from "./Alfabeto";
 import {Clave} from "./Clave";
-// Paquete requerido para utilizar el prompt.
-const {prompt} = require('enquirer');
-const inquirer = require('inquirer');
 /**
  * Clase Cifrado donde se lleva a cabo la codificación y decodificación César.
  */

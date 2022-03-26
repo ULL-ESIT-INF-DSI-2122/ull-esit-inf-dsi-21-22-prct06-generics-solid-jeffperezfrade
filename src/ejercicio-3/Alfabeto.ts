@@ -8,9 +8,7 @@ export class Alfabeto {
      * Constructor de la clase Alfabeto.
      * @param alfabeto Cadena que contiene el alfabeto.
      */
-    constructor(alfabeto: string){
-        this.alfabeto = alfabeto.split('');
-    }
+    constructor(alfabeto: string){this.alfabeto = alfabeto.split('');}
     /**
      * Método getter para obtener la longitud de la cadena.
      * @returns Devuelve la longitud del alfabeto.

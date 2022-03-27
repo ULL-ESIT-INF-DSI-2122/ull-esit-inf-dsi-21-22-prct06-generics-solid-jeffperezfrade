@@ -1734,7 +1734,11 @@ En esta carpeta abrimos el `index.html` con la extensión de VSCode llamada `Liv
 
 ## 6. Conclusión
 ---
+Me gustaría destacar la importancia de las interfaces genéricas ya que dan una base estructural sólida para el código, además de dejar espacio y flexibilidad para poder trabajar con cualquier tipo de dato. También las clases abstractas ordenan el código de forma limpia y correcta utilizando subclases y superclases.
 
+Personalmente no ha sido difícil implementar las clases abstractas ya que no es la primera vez que las utilizo, pero si que utilizo por primera vez las interfaces.
+
+Por último ya me he familiarizado con el uso de Instambul para el cubrimiento de código y ya es algo que no puede faltar cuando esté desarrollando. Esto nos hace mejorar cada vez más la forma de realizar el código porque siempre se está buscando el 100% de cubrimiento, poco a poco con experiencias se va mejorando.
 
 
 ## 7. Bibliografía

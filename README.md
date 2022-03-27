@@ -8,4 +8,4 @@ Para ver la **GitHub Page** haz click [aquí](https://ull-esit-inf-dsi-2122.gith
 
 Para ver el código fuente de la página haz click [aquí](./docs/index.md).
 
-![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct06-generics-solid-jeffperezfrade/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct06-generics-solid-jeffperezfrade?branch=main)
+![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2122/ull-esit-inf-dsi-21-22-prct06-generics-solid-jeffperezfrade/badge.svg?branch=main)

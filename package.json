@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output",
-    "start": "tsc-watch --onSuccess \"node dist/ejercicio-3/Ejercicio-3.js\"",
+    "start": "tsc-watch --onSuccess \"node dist/mod-singleton/RandomNumberSetCollection.js\"",
     "doc": "typedoc"
   },
   "keywords": [],
